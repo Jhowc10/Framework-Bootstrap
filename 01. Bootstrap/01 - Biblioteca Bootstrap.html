@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Biblioteca Bootstrap</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    
+
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!--Criação de uma barra de navegação-->
+
+        <div class="container"> <!--Container principal-->
+
+            <div class="navbar-header"> <!--cabeçalho-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">Exemplo Bootstrap</a>
+            </div> <!--Fim do cabeçalho-->
+
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav"> <!--Criação de botões na barra de navegação-->
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li class="dropdow"> <!--Criação de uma lista-->
+                        <a class="dropdow-toggle" href="#" data-toggle="dropdow">Lista<b class="caret"></b></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link 1</li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separador</a></li>    
+                        </ul>                       
+
+                    </li> <!--Fim da criação da lista-->
+                </ul> <!--Fim da criação de botões-->
+
+
+                                                  <!-- CRIAÇÃO DE UM FORMULÁRIO -->
+
+
+                <for class="navbar-form navbar-right">
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" placeholder="senha" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Realizar login</button>
+                </for>
+            </div>
+        </div>
+    </nav>                                          <!-- CRIAÇÃO DE UMA CAIXA GRANDE -->
+
+                <div class="jumbotron"> <!--Criação da grande caixa branca-->
+
+                    <div class="container">
+                        <h1>Olá mundo</h1>
+                        <p>Esta é uma página escrita com o <em>framework</em> Bootstrap. Apesar de simples, mostra como é fácil criar páginas com esta ferramenta. A divisão da página foi realizada usando apenas divs e as classes disponíveis.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Leia mais >></a></p>
+                    </div>
+                </div> <!-- Fim da caixa-->    
+                                                                 
+
+                <div class="container">
+
+                    <div class="row"> <!--Criação de uma linha-->
+
+                        <div class="col-md-4"> <!--Criação de uma coluna dentro da linha-->
+                            <h2>Título 1</h2>
+                            <p>Está é uma coluna criada com o div utilizando a classe "col-md-4". Aqui podem ser inseridos mais textos, figuras ou vídeos.</p>
+                             <p><a class="btn btn-default" href="#" role="button">Mais detalhes >></a></p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>Título 2</h2>
+                            <p>Veja como é facil fazer a divisão em colunas, basta repetir o bloo "col-md-4" para ter um novo espaço.</p><br>
+                            <p><a class="btn btn-default" href="#" role="button">Mais detalhes >></a></p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h2>Título 3</h2>
+                            <p>Está é a ultima coluna. Basta usar a imaginação para criar os blocos e utilizar.</p><br>
+                            <p><a class="btn btn-default" href="#" role="button">Mais detalhes >></a></p>
+                        </div>
+
+                    </div>
+
+                 </div>
+
+        <hr> 
+        <footer> <!--Criação do rodapé da pagina-->
+            
+            <p>@ Linguagem HTML, CSS e o Framework Bootstrap</p>
+
+        </footer>
+
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

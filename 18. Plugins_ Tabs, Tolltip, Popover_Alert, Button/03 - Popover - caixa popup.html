@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Nav Barra de navegação</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    
+
+    <!-- Caixa popup que é exibida quando o usuário clica bobre o elemento -->
+
+    <div class="container">
+     
+        <h2>Bootstrap - Popover com JavaScript</h2> <br>
+   
+        <button type="button" class="btn btn-success" id="one" data-toggle="popover" title="Cabeçalho popover" data-content="Este é um elemento a">Success</button>
+
+        <button type="button" class="btn btn-warning"  data-toggle="popover" title="Cabeçalho popover" data-content="Este é um elemento a">Warning</button>
+
+        <button type="button" class="btn btn-danger"   data-toggle="popover"  title="Cabeçalho popover" data-content="Este é um elemento a">Danger</button> 
+    </div>
+   
+    <script>
+        $(document).ready(function(){
+            $('[data-togle="popover"]').popover({trigger: 'click'}); 
+            $('[data-togle="popover"]').popover({trigger: "hover"}); 
+            $('[data-togle="popover"]').popover({trigger: "focus", delay: {show: 0, hide: 0} }); 
+        });
+    </script>  
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

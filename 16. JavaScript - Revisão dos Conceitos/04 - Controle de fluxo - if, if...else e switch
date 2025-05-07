@@ -1,0 +1,59 @@
+
+    Controle de fluxo - if
+    
+    if (condição desejada){
+        instrução;
+        instrução;
+        instrução;
+    }
+
+    Controle de fluxo - if...else
+
+    if(condição desejada){
+        instrução;
+        instrução;
+        instrução;
+    }else{
+        instrução;
+        instrução;
+        instrução;
+    }
+    
+    Controle de fluxo - if...if...else 
+
+    if(condição desejada){
+        instrução;
+        instrução;
+        instrução;
+    }else if(condição desejada){
+        instrução;
+        instrução;
+        instrução;
+    }else{
+        instrução;
+        instrução;
+        instrução;
+    }
+
+    Controle de fluxo - switch
+
+    switch(valor){
+        case condição1:
+            instrução;
+            break;
+        case condição2:
+            instrução;
+            break;
+        case condição3:
+            instrução;
+            break;
+        default:
+            instrução;
+            
+            break;
+    }
+
+
+    
+</body>
+</html>

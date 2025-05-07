@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Nav Barra de navegação</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <!-- Topptip é uma pequena caixa de popup, aparece quando o cursor é posicionada no elemento-->
+
+    <div class="container">
+     
+        <h2>Bootstrap - Tooltip com JavaScript</h2> <br>
+   
+       <button type="button" class="btn btn-success" data-toggle="tooltip" data-placent="left" title="Cabeçalho tooltip" data-content="Este é um elemento a">Success</button>
+
+        <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placent="top" title="Cabeçalho tooltip" data-content="Este é um elemento a">Warning</button>
+       
+        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placent="right" title="Cabeçalho tooltip" data-content="Este é um elemento a">Danger</button> 
+      </div>
+   
+      <script>
+        $(document).ready(function(){
+          $('.btn btn-success').tooltip({trigger: "click"}); 
+          $('.btn-warning').tooltip({trigger: "hover"}); 
+          $('.btn-danger').tooltip({trigger: "focus", delay: {show: 0, hide: 0} }); 
+        });
+      </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

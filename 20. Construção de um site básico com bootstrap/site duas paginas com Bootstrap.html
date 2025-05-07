@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Primeiro site com Bootstrap</title>
+ 
+        <!-- Arquivos CSS do framework Bootstrap-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+        <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+
+        <!-- Biblioteca de funcionalidades do Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+         <!-- Inclusão da biblioteca jQuery UI para a criação dos elementos da interface  -->
+        <script type="text/javascript" src="jquery-ui-1.13.2.UL leve.custom/jquery-ui.min.js"></script>
+       
+        <!-- Arquivos CSS do framework jQuery UI-->
+        <link rel="stylesheet" href="jquery-ui-1.13.2.UL leve.custom/jquery-ui.css">
+
+        <script>
+            $(document).ready(function(){
+                $('#contato').click(function(){
+                    $('#modalContato').modal('show');
+                });
+            });
+        </script>
+
+
+        <link rel="stylesheet" href="carousel.css">
+        <link rel="stylesheet" href="estilo.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top"> <!--barra de navegação fixa-->
+
+            <div class="container"> <!--container do menu-->
+
+                <div class="navbar-header"> <!--Cabeçalho do menu-->
+
+                    <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar"> 
+                        <span class="sr-only">Toggle navegation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                       
+                   </button>
+
+                                               <!-- LOGOTIPO DA PÁGINA -->
+
+                    <div class="brand">
+                        <img class="brand" src="imagens/logotipo1.PNG" alt="">
+                    </div>
+
+                </div> <!--Fim do cabeçalho-->
+
+                                              <!-- BARRA DE LINKS -->
+
+                <div id="navbar" class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#" id="contato">Fale conosco</a></li>
+                        <!--Criação de um botão com menu-->
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Links Úteis<span class="caret"></span></a>
+                        
+                            <ul class="dropdown-menu"> <!--Menu dentro de um botão-->
+                                <li class="dropdown-header">Educação</li> <!--Cabeçalho do menu dentro do botão-->
+                                <li><a href="http://www.uninove.br">Uninove</a></li> <!--Botões com links-->
+                                <li><a href="http://www.periodicos.cape.gov.br/">Portal CAPES</a></li>
+
+                                <li class="divider"></li> <!--Divisão do menu-->
+                                <li class="dropdown-header">Notícias</li> <!--Outro cabeçalho-->
+                                <li><a href="http://www.uol.com.br">UOL</a></li>
+                                <li><a href="http://www.terra.com.br">Terra</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div> <!--Fim do container menu-->
+        
+        </nav> <!--Fim da barra de navegação fixa--> 
+
+
+                                                   <!-- Carousel Slide (animação) -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators"> <!-- Configuração dos slides -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!-- O zero indica que é o primenro slide a ser montado-->
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox"> <!-- Criação dos slides-->
+
+                <div class="item active"> <!-- Criação do primeiro slide-->
+                    
+                    <img class="first-slide" src="imagens/arvore.PNG" alt="Primeiro Slide">
+                    <div class="container">
+
+                        <div class="carousel-caption">
+                            <h1>Primeiro Slide</h1>       
+                            <p>Aqui você pode colocar um texto inicial. Abaixo foi colocado um botão que pode ser direcionado para outra página ou então para algum recurso na mesma página</p>
+                            <p class="btn btn-lg btn-primary" href="#" role="button">Assine Já</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item"> <!--Segundo Slide-->
+                    <img class="second-slide" src="imagens/teclado.PNG" alt="Second Slide">
+                    <div class="container">
+
+                        <div class="carousel-caption">
+                            <h1>Segundo Slide</h1>
+                            <p>Aqui pode ir um Slogan para a págine</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item"> <!--Terceiro Slide-->
+                    <img class="third-slide" src="imagens/teclado2.JPG" Alt="Third slide">
+                    <div class="container">
+
+                        <div class="carousel-caption">
+                            <h1>Último Slide</h1>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Acesse Já</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Links para criação dos botões laterais -->
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>                                                   
+            
+        </div>    
+        
+
+                                         <!-- INICIO DA SESSÃO COM O TEXTO INICIAL DA PÁGINA -->
+
+
+        <section id="sobre">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="caption">
+                            <h1>SEJA BEM VINDO  </h1>
+                        </div>
+                        <P>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. 
+                            Nullam varius, turpis et commodo pharetra, est eros bibendum 
+                            elit, nec luctus magna felis sollicitudin mauris. Integer in 
+                            mauris eu nibh euismod gravida. Duis ac tellus et risus 
+                            vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. 
+                            Ut ullamcorper, ligula eu tempor congue, eros est euismod 
+                            turpis, id tincidunt sapien risus a quam. Maecenas fermentum 
+                            consequat mi. Donec fermentum.</P>
+                    </div>
+
+
+                                           <!-- COLOCANDO A FOTO AO LADO DO PARÁGRAFO -->
+
+
+                    <div class="col-lg-4">
+
+                        <div class="foto-destaque">
+                            <img src="imagens/Placa.JPG" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Nulla gravida orci a odio. Nullam varius, turpis et commodo 
+                                pharetra, est eros bibendum elit, nec luctus magna felis 
+                                sollicitudin mauris.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+                             <!-- MONTA UM PAINEL PARA A EXIBIÇÃO DE TRÊS LOGOTIPOS E ALGUMAS DESCRIÇÃO -->
+
+
+        <div class="container marketing">
+
+            <div class="fundo">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <img src="imagens/angular.PNG" alt="">
+                        <h2>Anjular JS</h2>
+                        <p>É um framework JavaScript opem-source, mantido pelo Google, que auxilia na execução de single-page applications...</p>
+                        <p><a class="btn btn-default" href="#" role="button">Mais detalhes >></a></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="imagens/Bootstrap.PNG" alt="">
+                        <h2>Bootstrap</h2>
+                        <p>O Bootstrap foi desenvolvido pelo time de desenvolvedores do twitter, para facilitar a manutenção dos códigos CSS</p>
+                        <p><a class="btn btn-default" href="#" role="button">Mais detalhes >></a></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="imagens/Node JS.PNG" alt="">
+                        <h2>Node JS</h2>
+                        <p>Node.JS é uma plataforma construída sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede rápidas</p>
+                        <p><a class="btn btn-default" href="#" role="button">Mais detalhes >></a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+                                    <!-- EXEMPLO DE BLOCOS ALINHADOS A ESQUERDA E A DIREITA -->
+
+
+        <div class="row">
+
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Bloco alinhado à esquerda</h2>
+                <p class="lead">Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum.</p>
+            </div>
+
+        </div>
+
+        <div class="row featurette">
+
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Bloco alinhado à direita</h2>
+                <p class="lead text-justify"> Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+            </div>
+            
+        </div>
+
+
+                                              <!-- PAINEL DANDO DESTAQUE NO RODAPÉ -->
+
+
+        <div class="destaque-painel">
+            <section id="destaque-painel">
+
+                <div class="container">
+                    <a name="contato"></a>
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="block">
+                                <h1 class="title">AVISO</h1>
+                                <h3>Aqui pode ser colocada uma propaganda ou outros elementos textuais</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+                                                       <!-- RODAPÉ DA PÁGINA -->
+
+        <footer id="footer">
+
+            <div class="container">
+                <br>
+                <div class="col-md-8">
+                    <p>@ 2017 Nome da empresa LTDA. <a href="#">Política de Privacidade</a> - <a href="#">Termo de uso</a>
+            </div>
+
+            <div class="col-md-4">
+                <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+            </div>
+        </footer>
+
+
+                                                  <!-- MODAL fALE CONOSCO -->
+
+
+
+        <div id="modalContato" class="modal fade" role="dialog">
+
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content"> <!--Modal content-->
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">x</button>
+                        <h1 class="modal-title text-center"><strong>Fale Conosco</strong></h1>
+                    </div>
+
+                    <div class="modal-body">
+                        <form name="fale" class="form-horizontal" action="" method="post">
+
+                            <fieldset>
+
+                                <div class="form-group">
+                                    <label form="inputName" class="col-lg-2 control-label">Assunto</label>
+
+                                    <div class="col-lg-10">
+
+                                        <select class="form-control" id="inputAssunto" name="assunto">
+                                            <option disabled selected>Selecione um assunto</option>
+                                            <option>Dúvidas Gerais</option>
+                                            <option>   Comercial  </option>
+                                            <option>  Financeiro  </option>
+                                            <option>   Diretoria  </option>
+                                        </select>
+
+                                    </div> 
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputName" class="col-lg-2 control-label">Nome</label>
+                                    
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="inputNome" name="nome" placeholder="informe seu nome">
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-lg-2 control-label">E-mail</label>
+
+                                    <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Informe seu e-mail">
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="col-lg-6 col-lg-offset-2">
+                                        <buton type="button" class="btn btn-primary" data-dismiss="modal">Enviar</buton>
+                                    </div>
+
+                                </div>
+
+                            </fieldset>
+
+                        </form>
+
+                    </div>                
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+#sobre{
+    margin-top:    10px;
+    margin-bottom: 70px;
+    font-size:     22px;
+    line-height:  1.8em;
+    text-align: justify;
+}
+/* ALINHA A FOTO COM O PARÁGRAFO E COLOCA UMA BORDA PRETA */
+.foto-destaque {
+    margin-top:         11px;
+    border: solid 4px #000;
+}
+/* COLOCA UM FUNDO NO PAINEL COM OS LOGOTIPOS */
+.fundo {
+    padding:               20px;
+    background-color: #f8f8f8;
+}
+/* COLOCA UM RETANGULO AZUL NO RODAPÉ */
+.destaque-painel {
+    background:        #02bdd5;
+    background-size:       cover;
+    background-attachment: fixed;
+    padding:              80px 0;
+    text-align:           center;
+    position:           relative;
+    color:                #fff;
+}
+/* CONFIGURA A LARGURA DO FORMULÁRIO DE CONTATO */
+#modalContato .modal-dialog {
+    width: 450px;
+}

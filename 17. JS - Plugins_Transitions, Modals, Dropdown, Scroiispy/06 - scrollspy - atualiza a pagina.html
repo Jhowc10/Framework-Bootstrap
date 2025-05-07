@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Nav Barra de navegação</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <style type="text/css">
+        body {
+         position: relative; 
+        }
+        #home {padding-top:50px;height:500px;color: #fff; background-color: blue;}
+        #html {padding-top:50px;height:500px;color: #fff; background-color: green;}
+        #css {padding-top:50px;height:500px;color: #fff; background-color: orange;}
+        #js {padding-top:50px;height:500px;color: #fff; background-color: grey;}
+       </style>     
+    
+     </head>
+     
+     <body>
+    
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+       
+        <div class="container-fluid">
+      
+       
+          <div class="navbar-header">
+           <a class="navbar-brand" href="#">Scrollspy</a>
+          </div>
+    
+          <ul class="nav navbar-nav">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#html">HTML</a></li>
+           <li><a href="#css">CSS</a></li>
+           <li><a href="#js">JavaScript</a></li>
+          </ul>
+    
+        </div>
+    
+       </nav>
+      
+       <div id="home" class="container-fluid">
+         <h2>Home</h2>
+         <p>Utilize a barra de rolagem e observe a transição 
+            automática dos menus contidos na barra de navegação. 
+         </p>
+       </div>
+       <div id="html" class="container-fluid">
+         <h2>HTML</h2>
+         <p>Lorem ipsum pulvinar ornare ac venenatis elementum, egestas 
+            potenti curabitur praesent erat, sollicitudin quisque mollis 
+            egestas est. potenti porta cubilia ipsum adipiscing curae nec 
+            quis sem imperdiet leo dictumst litora mollis amet, feugiat 
+         </p>
+       </div>
+       <div id="css" class="container-fluid">
+         <h2>CSS</h2>
+         <p>Lorem ipsum pulvinar ornare ac venenatis elementum, egestas 
+            potenti curabitur praesent erat, sollicitudin quisque mollis 
+            egestas est. potenti porta cubilia ipsum adipiscing curae nec 
+            quis sem imperdiet leo dictumst litora mollis amet, feugiat 
+         </p>
+       </div>
+       <div id="js" class="container-fluid">
+          <h2>JavaScript</h2>
+          <p>Lorem ipsum pulvinar ornare ac venenatis elementum, egestas 
+             potenti curabitur praesent erat, sollicitudin quisque mollis 
+             egestas est. potenti porta cubilia ipsum adipiscing curae nec 
+             quis sem imperdiet leo dictumst litora mollis amet, feugiat 
+          </p>
+        </div>    
+    
+       
+       <script>
+            $(document).ready(function () {
+            $('body').scrollspy({ target: ".navbar", offset: 380});
+    
+        //Retire este comentário para testar o evento activate.bs.scrollspy
+            //$(".navbar").on("activate.bs.scrollspy", function () {
+            //alert("Atualizou a barra de navegação!");
+            //   })
+           });
+       </script>    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

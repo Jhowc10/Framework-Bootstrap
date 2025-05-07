@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Arquivo Modelo para o Bootstrap</title>
+ 
+        <!-- Arquivos CSS do framework Bootstrap-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+        <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+
+        <!-- Biblioteca de funcionalidades do Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+         <!-- Inclusão da biblioteca jQuery UI para a criação dos elementos da interface  -->
+        <script type="text/javascript" src="jquery-ui-1.13.2.UL leve.custom/jquery-ui.min.js"></script>
+       
+        <!-- Arquivos CSS do framework jQuery UI-->
+        <link rel="stylesheet" href="jquery-ui-1.13.2.UL leve.custom/jquery-ui.css">
+
+        <link rel="stylesheet" href="estilo.css">
+
+        <script>
+
+            $(document).on('click', '.panel-heading span.clickable', function (e){
+                var $this = $(this);
+                if (!$this.hasClass('panel-collapsed')){
+                    $this.parents('.panel').find('.panel-body').slideUp();
+                    $this.addClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+                }else{
+                    $this.parents('.panel').find('.panel-body').slideDown();
+                    $this.removeClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+                }
+            });
+            $(document).on('click', '.panel div.clickable', function(e){
+                var $this = $(this);
+                if(!$this.hasClass('panel-collapsed')){
+                    $this.parents('.panel').find('.panel-body').slideUp();
+                    $this.addClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+                }else{
+                    $this.parents('.panel').find('.panel-body').slideDown();
+                    $this.removeClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-plus').addClass('gluphicon-minus');
+                }
+            });
+            $(document).ready(function(){
+                $('.panel-heading span.clickable').click()
+                $('panel div.clickable').click();
+            });
+
+
+        </script>
+
+    </head>
+    <body>
+        <br><br>
+        <div class="container">
+
+            <div class="col-md-7">
+
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+                        <h3>Eu sou um painel...(clique no sinal de adição)</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span><br>
+                    </div>
+                    
+
+                    <div id="recuo">
+                        <div class="panel-body">
+                            <h2><em>Eu sou um título itálico</em></h2>
+                            <p>Eu sou um paragráfo. </p>
+                            <table class="table table-responsive">
+
+                            <thead> <!--Cabeçalho da tabela-->
+                                <tr>
+                                    <th>Cod.</th>
+                                    <th>Tipo</th>                                
+                                </tr>
+                            </thead> <!--Fim do cabeçalho-->
+
+                                <tbody>                                                               
+                                        <td>001</td>
+                                        <td>Primeiro Item</td>
+                                    </tr>
+
+                                    <tr>                                    
+                                        <td>002</td>
+                                        <td>Segundo Item</td>
+                                    </tr>
+
+                                     <tr>                               
+                                        <td>003</td>
+                                        <td>Terceiro Item</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>    
+
+    </body>
+</html>

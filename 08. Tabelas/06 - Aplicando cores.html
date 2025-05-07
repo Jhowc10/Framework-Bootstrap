@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Importação CSS, tem que ser a primeira importação -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> 
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Bootstrap - Classe .table</h2>
+
+<!-- 
+.table-active: aplica a cor do efeito hover na célula ou na linha;
+.table-success: representa um aviso de sucesso.
+.table-info: representa um aviso de informação.
+.table-warning: representa um aviso de atenção.
+.table-danger: representa um aviso de perigo.
+-->
+<!-- 
+    scope="col" = Se coloca em todas tad <th> do <thead>, indicando que é coluna.
+    scope="row" = No <tboy> só se coloca no <th> indicando que é linha.
+ -->
+        <table class="table"> <!--Inicia a tabela-->
+            <thed> <!--Cabeçalho-->
+                <tr class="table-active"> <!--Primeira linha-->
+                    <th scope="col">Nome</th> <!-- Colunas em negrito-->
+                    <th scope="col">RA</th>
+                    <th scope="col">Nota</th>
+                </tr>
+            </thed>
+
+            <tbody>
+                <tr class="table-success"> <!-- Segunda linha-->
+                    <td>Aluno 1</td> <!-- Colunas normais-->
+                    <td>123</td>
+                    <td>10</td>
+                </tr>
+
+              <tr> <!--Terceira linha-->
+                <td class="table-info">Aluno 2</td> <!--Colunas-->
+                <td>456</td>
+                <td>8,5</td>
+              </tr>
+
+              <tr> <!--Quarta linha-->
+                <td>Aluno 3</td> <!--Colunas-->
+                <td class="table-warning">789</td>
+                <td>4,75</td>
+              </tr> 
+
+              <tr>
+                <td>Aluno 4</td>
+                <td>159</td>
+                <td class="table-danger">0,25</td>
+              </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
